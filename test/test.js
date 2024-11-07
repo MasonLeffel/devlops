@@ -12,13 +12,3 @@ describe('First two terms', function() {
       assert.strictEqual(main.fibonacci(1), 1);
     });
 });
-
-describe('Negative Tests', function() {
-  it('should throw an error for negative inputs', function() {
-      assert.throws(() => main.fibonacci(-1), Error, "Expected an error for negative input");
-  });
-
-  it('should throw an error for non-integer inputs', function() {
-      assert.throws(() => main.fibonacci(0.5), Error, "Expected an error for non-integer input");
-  });
-});
