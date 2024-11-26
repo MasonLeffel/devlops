@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-coverage": "nyc --check-coverage=true --statements=100 mocha"
   },
   "author": "Mason Leffel",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^8.4.0"
+    "mocha": "^8.4.0",
+    "nyc": "^17.1.0"
   }
 }
